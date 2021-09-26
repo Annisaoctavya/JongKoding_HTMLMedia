@@ -1,0 +1,92 @@
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Dashboard| Rumah Baca JK
+    </title>
+    <link rel="stylesheet" href="./Dashboard_style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div id="header" class="wrapper">
+            <div class="container" style="height: 150px; display: block; position: fixed;">
+                <div class="head-up">
+                    <div class="box-logo">
+                        <div id="logo-con">
+                            <img src="logo.825423d.png" class="img-logo" alt="">
+                        </div>
+                    </div>
+                    <div id="box-search">
+                        <input type="search" placeholder="   Ketik dan cari" style="width: 250px;height: 40px;border-radius: 20px;">
+                    </div>
+                    <div id="regis"> <a id="register"  href="#">Daftar</a></div>
+                    <div id="login">
+                        <i class="fa fa-sign-in"></i>
+                    </div>
+                </div>
+                <div class="head-bot">
+                    <div id="box-menu">
+                        <a href="Halaman_Beranda.html"><div>Home</div></a>
+                        <a href="#"><div>About Us</div></a>
+                        <a href="#"><div>Kategori</div></a>
+                        <a href="#"><div>Buku Populer</div></a>
+                        <a href="#"><div>Buku Terbaru</div></a>
+                        <a href="#"><div>Keranjang Buku</div></a>
+                        <a href="#"><div>My Profile</div></a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div id="konten" class="wrapper">
+            <div class="container" style=" display: flex; justify-content: space-between;">
+                <div class="video">
+                    <h2>Do Better: Spiritual Activism for Fighting and Healing from White Supremacy</h2>
+                    <div class="cover">
+                        <div class="play-con" id="play" onclick="play()">
+                            <i class="fa fa-play"></i>
+                        </div>
+                        <video width="300" height="240" id="videoplay" controls>
+                            <source src="./movie.mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="video kecil">
+                    <h2>Instrumental Pagi Menenangkan Jiwa dan Raga Sebelum BEraktivitas</h2>
+                    <div class="cover">
+                        <div class="play-con music" id="playmusic" onclick="playmusic()">
+                            <img src="https://images.unsplash.com/photo-1631970840760-61f9f630684f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="">
+                        </div>
+                        <audio width="300" height="240" id="mp3" controls>
+                            <source src="./Instrumental musik pilihan menemani pagi hari yang sangat enak YANG BIKIN SANTUY !!!!.mp3">
+                        </audio>
+                    </div>
+                </div>
+                <div class="video kecil" style="margin-top: 320px;">
+                    <div class="cover">
+                        <img src="https://images.unsplash.com/photo-1632052865337-c80888f69435?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+    <script>
+        function play() {
+          document.getElementById("play").style.display = "none";
+          var vid = document.getElementById("videoplay");
+          vid.style.display = "block";
+          vid.autoplay = true;
+          vid.load();
+        }
+
+        function playmusic() {
+          document.getElementById("playmusic").style.display = "none";
+          var mp3 = document.getElementById("mp3");
+          mp3.style.display = "block";
+          mp3.autoplay = true;
+          mp3.load();
+        }
+    </script>
+</html>
